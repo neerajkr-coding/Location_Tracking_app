@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Secure Journey</string>
+    <string name="myfamilyheading">My Family</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dashboard_heading">Dash Board</string>
+    <string name="profile_heading">Profile</string>
+    <string name="google_maps_key">BuildConfig.MAP_API_KEY</string>
+</resources>
