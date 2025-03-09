@@ -17,13 +17,11 @@ android {
         properties.load(keystoreFile.inputStream())
 
         val apiKey = properties.getProperty("MAP_API_KEY") ?: ""
-
         buildConfigField(
             type = "String",
             name = "MAP_API_KEY",
             value = apiKey
         )
-
 
 
         applicationId = "com.example.securejourney"
