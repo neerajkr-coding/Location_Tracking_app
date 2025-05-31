@@ -1,4 +1,4 @@
-package com.example.securejourney
+package com.example.securejourney.Entity
 
 data class Member(
     val name: String,

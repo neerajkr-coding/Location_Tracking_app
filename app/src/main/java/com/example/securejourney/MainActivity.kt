@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         Log.d("TOBI_TAG", "This is a debug message")
 
-        ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),1001 )
+        ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.READ_CONTACTS),1001 )
 
 
         val navigationBar = findViewById<BottomNavigationView>(R.id.navigationBar)

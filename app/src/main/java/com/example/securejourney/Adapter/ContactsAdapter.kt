@@ -1,16 +1,17 @@
-package com.example.securejourney
+package com.example.securejourney.Adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import java.util.zip.Inflater
+import com.example.securejourney.Entity.Contacts
+import com.example.securejourney.R
 
 class ContactsAdapter(private val contactsList: MutableList<Contacts>): RecyclerView.Adapter<ContactsAdapter.ViewHolder>() {
 
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContactsAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
         val Inflater = LayoutInflater.from(parent.context)
         val item = Inflater.inflate(R.layout.invite_item, parent, false)

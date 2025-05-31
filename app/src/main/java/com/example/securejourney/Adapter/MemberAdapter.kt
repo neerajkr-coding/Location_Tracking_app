@@ -1,4 +1,4 @@
-package com.example.securejourney
+package com.example.securejourney.Adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,19 +6,21 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.securejourney.Entity.Member
+import com.example.securejourney.R
 
 class MemberAdapter(private val memberList:MutableList<Member>):
     RecyclerView.Adapter<MemberAdapter.ViewHolder>() {
 
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MemberAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
         val item = inflater.inflate(R.layout.item_family_member,parent,false)
 
         return ViewHolder(item)
     }
 
-    override fun onBindViewHolder(holder: MemberAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
         val i = memberList[position]
 
